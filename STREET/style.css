@@ -1,0 +1,458 @@
+/* CSS VAR  */
+:root {
+    --fm: 'Raleway', sans-serif;
+    --fm-robot: 'Roboto', sans-serif;
+    --fm-thin: 100;
+    --fm-light: 300;
+    --fm-regul: 400;
+    --fm-bold: 700;
+    --fm-blcak: 900;
+    --green_75: rgba(105, 207, 23, 0.75);
+    /* activni hafofligi */
+    --green_90: rgba(105, 207, 23, 0.90);
+    /* gamburgerni hafofligi */
+    --green: #69cf17;
+    /* Link uchun  */
+    --green-2: #62be19;
+    /* logoni borderi  */
+    --green-4: #4e9f0d;
+    /* LOGO UCHUn */
+    --gray-p: #dedede;
+    /* Header paragraf uchun  */
+    --white: #ffff;
+    --grey: #7a7a7a;
+    --black: #060002;
+    /* body uchun */
+    --bl-shadw: rgba(0, 0, 0, 0.1);
+    --col-1: calc(100% / 12 * 1);
+    --col-2: calc(100% / 12 * 2);
+    --col-3: calc(100% / 12 * 3);
+    --col-4: calc(100% / 12 * 4);
+    --col-5: calc(100% / 12 * 5);
+    --col-6: calc(100% / 12 * 6);
+    --col-7: calc(100% / 12 * 7);
+    --col-8: calc(100% / 12 * 8);
+    --col-9: calc(100% / 12 * 9);
+    --col-10: calc(100% / 12 * 10);
+    --col-11: calc(100% / 12 * 11);
+    --col-12: calc(100% / 12 * 12);
+}
+
+/* VAR END  */
+
+/* ====== START ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: var(--fm);
+    background: var(--black);
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* ====== */
+
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+/* ====== */
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+/* === */
+.col-12 {
+    width: var(--col-12);
+    padding: 0 15px;
+}
+
+.col-4 {
+    width: var(--col-4);
+    padding: 0 15px;
+}
+
+
+
+/* ===== HEADER__START CSS ======== */
+
+header {
+    width: 100%;
+    min-height: 770px;
+    background: url('./images/bg_img.jpg') no-repeat center center / cover;
+}
+
+.logo {
+    background: var(--green-4);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: var(--fm-bold);
+    padding: 11px 22px;
+    border: 3px solid var(--green-2);
+    border-radius: 5px;
+    box-shadow: inset 0 0 30px 0 var(--bl-shadw);
+    line-height: 17px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    color: var(--green);
+    font-weight: var(--fm-light);
+    font-size: 20px;
+    padding: 37px 26px 29px 26px;
+    display: flex;
+}
+
+header nav ul li a.active {
+    background: var(--green_75);
+    padding: 37px 11px 29px 11px;
+    color: var(--white);
+}
+
+/* ====== hover */
+header nav ul li a.active:hover {
+    padding: 37px 11px 29px 11px;
+}
+
+/* ======  hover*/
+header nav ul li a:hover {
+    padding: 37px 26px 29px 26px;
+    background: var(--green_75);
+    color: var(--white);
+}
+
+header nav ul li a.active span {
+    width: 24px;
+    height: 24px;
+    background: var(--white);
+    color: var(--green);
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 7px;
+}
+
+/* ======== */
+header h1 {
+    font-size: 72px;
+    color: var(--green);
+    font-weight: var(--fm-blcak);
+    margin-top: 150px;
+    text-transform: uppercase;
+}
+
+header p:first-of-type {
+    font-size: 36px;
+    font-weight: var(--fm-regul);
+    color: var(--green);
+    margin-bottom: 30px;
+}
+
+header p:nth-of-type(2) {
+    font-weight: var(--fm-regul);
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 75px;
+    color: var(--gray-p);
+}
+
+header .header_price {
+    padding: 28px 90px;
+    background: var(--green_75);
+    font-weight: var(--fm-thin);
+    font-size: 60px;
+    color: var(--white);
+}
+
+/* ====================   HEADER _ END ==================== */
+
+
+
+/* ====================   main - START  ==================== */
+
+main ul {
+    margin: 50px 0 70px !important;
+}
+
+main ul li {
+    margin-right: 50px;
+}
+
+main ul li a {
+    color: var(--grey);
+    font-size: 20px;
+    font-weight: var(--fm-bold);
+    transition: 500ms;
+}
+
+/* ======= hover  */
+main ul li a:hover {
+    color: var(--green);
+}
+
+main ul li a.active {
+    color: var(--green);
+}
+
+main section .section_img {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+main section .section_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section .section_img .price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+main section .section_img .price span {
+    display: block;
+    padding: 21px 58px;
+    background: var(--green_75);
+    font-weight: var(--fm-regul);
+    font-size: 24px;
+    color: white;
+}
+
+main section .section_img button {
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: var(--fm-bold);
+    background: var(--green_90);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    opacity: 0;
+    transition: 500ms;
+}
+
+/*    =======hover===== */
+main section .section_img:hover button {
+    opacity: 1;
+}
+
+main section .section_img:hover .price {
+    opacity: 0;
+}
+
+main section h2 {
+    font-size: 24px;
+    font-weight: var(--fm-bold);
+    margin-top: 32px;
+    margin-bottom: 14px;
+    color: var(--green);
+}
+
+main section p {
+    font-size: 16px;
+    font-weight: var(--fm-regul);
+    color: var(--gray-p);
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+
+
+
+/* ====================   main - end  ==================== */
+
+
+/* section  */
+.section {
+    background: url('./images/section_bg.jpg') no-repeat center center / cover;
+}
+
+.section h2 {
+    color: var(--green);
+    font-size: 36px;
+    font-weight: var(--fm-bold);
+    margin-top: 50px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section h2::after {
+    content: " ";
+    display: block;
+    max-width: 50%;
+    width: 100%;
+    height: 1px;
+    background: var(--green);
+    margin-top: 26px;
+}
+
+.section p {
+    color: var(--white);
+    font-weight: var(--fm-regul);
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.section p:last-of-type {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+/* ===================  Section - map Start  ===================  */
+.map h2 {
+    color: var(--green);
+    font-size: 36px;
+    font-weight: var(--fm-bold);
+    padding: 50px 0 60px;
+    background: var(--white);
+    text-align: center;
+}
+
+/*=================== Section - map end  ===================*/
+
+
+
+
+
+
+
+
+
+/*=================== footer STARTING =================== */
+
+footer .footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+footer .footer_info .phone {
+    font-size: 24px;
+    color: var(--green-4);
+    font-weight: var(--fm-bold);
+    font-family: var(--fm-robot);
+}
+
+/* ===========  footer_nav ===========*/
+
+footer .footer_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .footer_nav ul li {
+    margin-right: 50px;
+
+}
+
+footer .footer_nav a {
+    color: var(--white) !important;
+    font-size: 18px;
+    font-weight: var(--fm-thin);
+    font-family: var(--fm) !important;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: var(--fm-thin);
+    color: var(--white);
+    margin: 40px 50px
+}
+
+
+/*  MEDIA SCREEN STARTING  */
+
+@media (max-width: 992px) {
+
+    /*  LG  */
+    .col-lg-6 {
+        width: var(--col-6);
+    }
+
+    .row {
+        margin: 0;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /*  MD  */
+    .d-md-none {
+        display: none !important;
+    }
+    header .logo{
+        margin-top: 20px;
+    }
+    .col-md-12{
+        width: var(--col-12);
+    }
+    main
+}
+
+
+
+@media (max-width: 576px) {
+    /*  SM  */
+
+}
